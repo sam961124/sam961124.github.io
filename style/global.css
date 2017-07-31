@@ -1,0 +1,60 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  position: relative; }
+
+.main {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background-color: black; }
+  .main img {
+    position: absolute;
+    width: 100%; }
+
+.navbar {
+  color: white;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 80px;
+  width: 100%;
+  line-height: 80px; }
+  .navbar .navbar-title {
+    font-size: 35px;
+    font-weight: 200; }
+  .navbar .navbar-links a {
+    color: white;
+    line-height: 80px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 50px;
+    font-weight: 200; }
+
+.header {
+  width: 100%;
+  position: relative;
+  top: 400px; }
+  .header .header-title {
+    color: #FA8072;
+    font-size: 100px;
+    height: 100%;
+    line-height: 150px;
+    font-weight: 500; }
+  .header .header-quote {
+    color: #0A0052;
+    font-size: 27px;
+    line-height: 60px;
+    font-weight: 200; }
+  .header .chevron-right {
+    animation: floating 2s infinite; }
+
+@keyframes floating {
+  0% {
+    transform: translateX(0px); }
+  50% {
+    transform: translateX(-5px); }
+  100% {
+    transform: translateX(0px); } }
+
+/*# sourceMappingURL=global.css.map */
