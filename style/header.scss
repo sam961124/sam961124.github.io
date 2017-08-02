@@ -1,0 +1,72 @@
+.header {
+    width: 100%;
+    margin-top: 80px;
+    padding-top: 120px;
+    position: relative;
+    animation: floatingbox 2s infinite;
+    .commandline-box {
+        height: 360px;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: rgba(0,0,0,0.8);
+        .commandline-top {
+            display: inline-block;
+            background-color: #dbdbdb;
+            height: 40px;
+            width: 100%;
+            .commandline-button {
+                line-height: 40px;
+                img {
+                    width: 28px;
+                    margin-left: 5px;
+                    transition: all .3s ease-out;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+        .commandline-command {
+            padding: 10px;
+            font-size: 20px;
+            font-family: monaco, Consolas, "Lucida Console", monospace;
+            display: inline-block;
+            color: white;
+            height: 30px;
+            .input-sign {
+                display: inline-block;
+                width:5px;
+                vertical-align: middle;
+                height: 25px;
+                background-color: white;
+                animation: flashing 1s infinite;
+            }
+        }
+    }
+}
+@keyframes floatingbox {
+    0% {
+        transform: translateY(0);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes flashing {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

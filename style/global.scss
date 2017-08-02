@@ -3,18 +3,17 @@ html, body {
     width: 100%;
     position: relative;
 }
-
 .main {
     position: relative;
     height: 100%;
     overflow: hidden;
     background-color: black;
-    img {
+    .background-img {
         position: absolute;
         width: 100%;
     }
 }
-.navbar {
+.navbar1 {
     color: white;
     position: fixed;
     top: 0;
@@ -26,47 +25,31 @@ html, body {
         font-size: 35px;
         font-weight: 200;
     }
-    .navbar-links {
-        a {
-            color: white;
-            line-height: 80px;
-            font-size: 18px;
-            text-decoration: none;
-            margin-right: 50px;
-            font-weight: 200;
-        }
-    }
-}
-.header {
-    width: 100%;
-    position: relative;
-    top: 400px;
-    .header-title {
-        color: #FA8072;
-        font-size: 100px;
-        height: 100%;
-        line-height: 150px;
-        font-weight: 500;
-    }
-    .header-quote {
-        color: #0A0052;
-        font-size: 27px;
-        line-height: 60px;
+    .navbar-labels {
+        display: inline-block;
+        line-height: 80px;
+        font-size: 18px;
+        margin-right: 50px;
         font-weight: 200;
-    }
-    .chevron-right {
-	    animation: floating 2s infinite;
+        transition: all .3s ease-out;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        &:hover {
+            transform: translateY(-3px);
+        }
     }
 }
 
 @keyframes floating {
   0% {
-    transform: translateX(0px);
+    transform: translateY(0px);
 	}
   50% {
-    transform: translateX(-5px);
+    transform: translateY(5px);
 	}
   100% {
-    transform: translateX(0px);
+    transform: translateY(0px);
 	}
 }
