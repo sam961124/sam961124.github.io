@@ -4,7 +4,7 @@ $(document).ready(function(){
     setTimeout(function(){
         $("#header").addClass("animated fadeInUp");
         $(".header").css("display", "block");
-    },10);
+    },100);
     console.log("ready!")
 });
 $(window).on("load", function(){
