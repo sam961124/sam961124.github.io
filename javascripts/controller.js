@@ -7,3 +7,6 @@ $(function(){
         $("#header").addClass("animated fadeInUp");
     },100)
 });
+$(window).load(function() {
+    document.getElementById("hideAll").style.display = "none";
+});
