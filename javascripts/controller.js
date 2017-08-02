@@ -3,7 +3,7 @@ $(function(){
     $("#navbar").load("views/navbar.html");
     $("#header").load("views/header.html");
     setTimeout(function(){
-        $("#header").addClass("animated fadeInUp");
         $(".header").css("display", "block");
+        $("#header").addClass("animated fadeInUp");
     },50)
 });
