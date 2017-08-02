@@ -8,5 +8,5 @@ $(window).on("load", function(){
     setTimeout(function(){
         $(".header").css("display", "block");
         $("#header").addClass("animated fadeInUp");
-    },100)
+    },50)
 });
