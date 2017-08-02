@@ -1,12 +1,14 @@
 //load html
-$(function(){
-    $("#navbar").load("views/navbar.html");
-    $("#header").load("views/header.html");
-});
-$(window).on("load", function(){
+$(document).ready(function(){
     $("#hideAll").css("display", "none");
     setTimeout(function(){
-        $(".header").css("display", "block");
         $("#header").addClass("animated fadeInUp");
-    },50)
+        $(".header").css("display", "block");
+    },10);
+    console.log("ready!")
+});
+$(window).on("load", function(){
+    $("#navbar").load("views/navbar.html");
+    $("#header").load("views/header.html");
+    console.log("load!");
 });
