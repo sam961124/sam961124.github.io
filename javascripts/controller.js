@@ -5,5 +5,5 @@ $(function(){
     setTimeout(function(){
         $(".header").css("display", "block");
         $("#header").addClass("animated fadeInUp");
-    },50)
+    },100)
 });
